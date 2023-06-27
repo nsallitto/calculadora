@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: sans-serif;
+}
+
+
+/* #6a9a5d verde
+#abdd9b verdeli
+#5e43f5 azul    
+#9375f8 azul li */
+
+
+body{
+    background-color: #abdd9b;
+    min-height: 100vh;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora{
+    background-color: #6a9a5d;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 350px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    gap: .5rem;
+}
+
+.pantalla{
+    grid-column: 1/ -1;
+    background-color: #abdd9b;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: right;
+    font-family: monospace;
+    font-weight: 400;
+}
+
+
+.btn{
+    background-color: #6a9a5d;
+    border: 0;
+    color: white;
+    padding: 1.5rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn:hover{
+    background-color: #abdd9b;
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+#cero{
+    grid-column: 1 / 3;
+}
+
+#igual{
+    grid-row: span 2;
+    background-color: #9375f8;
+    border-radius: .5rem;
+}
+#igual:hover{
+    background-color: #5e43f5;
+}
+
